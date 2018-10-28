@@ -1,0 +1,104 @@
+/*CSS*/
+@charset "utf-8";
+@font-face {
+	font-family: "Gidole";
+	src: url('../fonts/Gidole-Regular.ttf');
+}
+
+body {
+	background: #FBFBFB;
+	color: #444;
+	font-family: "Gidole";
+	font-size: 1.2em;
+	text-align: center;
+}
+h1 {
+	font-size: 3em;
+	margin-bottom: 0;
+	margin-top: 10vh;
+}
+p {
+	font-size: 1.25em;
+	margin: 0.25em 0 0.25em 0;
+}
+a, a:link, a:visited {
+	color: #6093BF;
+	cursor: pointer;
+	text-decoration: none;
+}
+a:hover, a:active {
+	color: #4D7599;
+}
+
+/**** LINKS ****/
+#links {
+	text-align: right;
+	padding-right: 1em;
+}
+#links li {
+	font-size: 2em;
+	display: inline-block;
+	padding-left: 0.25em;
+	vertical-align: middle;
+}
+#links a:link, #links a:visited {
+	color: #D0D0D0;
+}
+#links a:hover, #links a:active {
+	color: #6093BF;
+}
+
+/**** STAGES ****/
+#stages {
+	display: inline-block;
+}
+.stage {
+	padding: 1.5em 0 1em 0;
+}
+.button {
+	background-color: #6093BF;
+	border: 0;
+	border-bottom: 0.3em solid #4D7599;
+	border-left: 0.2em solid #4D7599;
+	border-right: 0.2em solid #4D7599;
+	border-radius: 6px;
+	color: #FFF;
+	cursor: pointer;
+	font-family: "Gidole";
+	font-size: 1.2em;
+	overflow: hidden;
+	height: 2.5em;
+	width: 8em;
+}
+.button:hover {
+	background-color: #4D7599;
+	border-bottom: 0.3em solid #3A5873;
+	border-left: 0.2em solid #3A5873;
+	border-right: 0.2em solid #3A5873;
+	color: #EEE;
+}
+.button:active {
+	background: linear-gradient(to bottom, #2D4459, #406280, #406280, #406280, #406280);
+	border-bottom: 0.3em solid #406280;
+	border-left: 0.2em solid #406280;
+	border-right: 0.2em solid #406280;
+	color: #EEE;
+}
+.button .padding {
+	font-size: 1.8em;
+}
+#file-input {
+    cursor: pointer;
+    font-size: 4em;
+    margin-top: -2em;
+    margin-left: -2em;
+    position: inherit;
+    opacity: 0;
+}
+#convert {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+#convert i {
+	font-size: 1.2em;
+}

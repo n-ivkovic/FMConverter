@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<title>FMConverter - Convert a FlagMaker1 flag to a FlagMaker2 flag</title>
+	<meta charset='UTF-8'> 
+	<meta name='author' content='Nicholas Ivkovic'>
+	<link rel='stylesheet' href='css/stylesheet.css' type='text/css'>
+	<link rel='stylesheet' href='css/font-awesome.css' type='text/css'>
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.13/css/all.css' type='text/css'>
+	<script src='js/convert.js'></script>
+</head>
+<body onload='load();'>
+	
+	<ul id='links'>
+		<li><a href='https://www.github.com/n-ivkovic/FMConverter' target='_blank'><i class='fab fa-git-square'></i></a></li>
+		<li><a href='https://www.reddit.com/r/vexillology/comments/9s0xxc/' target='_blank'><i class='fab fa-reddit-square'></i></a></li>
+	</ul>
+	
+	<h1><i class='far fa-flag'></i> FMConverter</h1>
+	<p>Convert a FlagMaker1 flag to a FlagMaker2 flag</p>
+	
+	<div id='stages'>
+		<div class='stage' id='upload'>
+			<div class='button'>
+				<span class='padding'></span>
+				<i class='fas fa-upload'></i> Upload
+				<form><input id='file-input' type='file' accept='.flag'/></form>
+			</div>
+		</div>
+		<div class='stage' id='convert'>
+			<i class='fa fa-cog fa-spin fa-3x fa-fw'></i>Converting...
+		</div>
+		<div class='stage' id='download'>
+			<div class='button' onclick='download();'>
+				<span class='padding'></span>
+				<i class='fa fa-download'></i> Download
+			</div>
+		</div>
+	</div>
+	
+	<p id='message'></p>
+	
+</body>
+</html>
